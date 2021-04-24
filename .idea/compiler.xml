@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ead2-midterm" />
         <module name="ead2-assignment7" />
+        <module name="JavaEE7" />
       </profile>
     </annotationProcessing>
   </component>

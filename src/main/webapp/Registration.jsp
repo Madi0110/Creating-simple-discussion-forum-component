@@ -6,23 +6,26 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" href="style.css">
-    <title>Log In</title>
+    <title>Registration</title>
 </head>
 <body>
 <nav>
     <a href="index.jsp">Main page</a>
-    <a href="registration.jsp">Register</a>
+    <a href="login.jsp">LogIn</a>
     <a href="logout">Log out</a>
 </nav>
-<form action="login" method="POST">
-    <p сlass="message"><%=(request.getAttribute("message") == null) ? ""
-            : request.getAttribute("message")%></p>
-    <h2>Log In</h2>
+
+<form action="registration" method="POST">
+    <%=(request.getAttribute("errMessage") == null) ? ""
+            : request.getAttribute("errMessage")%>
+    <h2>Registration</h2>
+    <label>Email: </label><br>
+    <input type="email" name="email"><br><br>
     <label>Username: </label><br>
     <input type="text" name="username"><br><br>
     <label>Password: </label><br>
     <input type="password" name="password"><br><br>
-    <button>Log In</button>
+    <button>Register</button>
 </form>
 </body>
 </html>
